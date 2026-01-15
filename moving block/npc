@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NPC : MonoBehaviour
+{
+    // NPC health
+    public int health = 10;
+
+    // NPC level
+    public int level = 1;
+
+    // NPC speed
+    public float speed = 1.2f;
+
+    Vector3 newPosition; // (x,y,z)
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Add level num to health
+        health += level; // health = health + level
+        print(health);
+
+        // Assign objects pos to newPosition
+        newPosition = transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
